@@ -1,0 +1,78 @@
+
+/* Demo 1 */
+.demo-1 .uc-container{
+	Position:relative;
+	width: 200px;
+	height: 143px;
+	margin: 60px auto	
+}
+
+.demo-1 .uc-single, 
+.demo-1 .uc-final,
+.demo-1 .uc-initial-content,
+.demo-1 .uc-back,
+.demo-1 .uc-front {
+	background: #fff url(../images/noise.png) repeat center center;
+}
+
+
+.demo-1 span.clickme {
+	Position: absolute;
+	color: transparent;
+	color: rgba(255,255,255,0);
+	left: -1px;
+	top: -13px;
+	z-index: 2;
+	width: 102px;
+	height: 59px;
+	margin-bottom: -50px;
+	cursor: pointer;
+	text-align: center;
+}
+
+
+
+.demo-1 .scrollwrap {
+    Position: absolute;
+	color: transparent;
+    color: rgba(255,255,255,0);
+	left: -179px;
+	top: -8px;
+	width: 469px;
+	height: 418px;
+	margin-bottom: -100px;
+	cursor: pointer;
+	text-align: center;
+    background: rgba(41,166,170,0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.demo-1 .uc-final-content:hover .scrollwrap  {
+    color: rgba(255,255,255,0.8);
+    background: rgba(255,255,200,0.7);
+}
+
+.demo-1 .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: "Satisfy", cursive;
+    color: #224092;
+    cursor: pointer;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #224092;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 14px;
+}
