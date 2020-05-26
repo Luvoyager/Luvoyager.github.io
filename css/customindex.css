@@ -1,5 +1,5 @@
 /* Demo 1 */
- @import url("https://use.typekit.net/luw5ddm.css");
+@import url("https://use.typekit.net/luw5ddm.css");
 
 .container {
 	position: relative;
@@ -23,7 +23,7 @@
 
 /* Sidebar links */
 .sidebar a {
-  dtext-align: left;
+  text-align: left;
   display: block;
   background-color: transparent;
   font-family:'Lato', sans-serif;
