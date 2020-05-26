@@ -4,61 +4,63 @@
 		<meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>TWO</title>
+        <title>ONE</title>
         <meta name="description" content="Spring 2020 Comic Artworks by PS 217"/>
         <meta name="keywords" content="comic art Teaching Artist Louise Diedrich Seq Art Franklin Furnace PS 217" />
         <meta name="author" content="Seq Art" />
-		<link rel="stylesheet" href="https://use.typekit.net/luw5ddm.css">
         <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/pfold.css" />
-        <link rel="stylesheet" type="text/css" href="css/custom1.2.css" />
-		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
-		<!--[change backgrd color: rgba(0,102,255,0)]-->
+        <link rel="stylesheet" type="text/css" href="../Folding Comics/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../Folding Comics/css/pfold.css" />
+        <link rel="stylesheet" type="text/css" href="../Folding Comics/css/custom1.css" />
+		<script type="text/javascript" src="../Folding Comics/js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+		<!--change bgcolor to ackground-color: rgba(0,102,255,0)-->
 		<style>
 			body { background-color: transparent; }
 			.container > header h1 {
 			    color: #fff;
 			    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 			}
+
+			.container > header h2,
+			p.info  {
+			    color: #4e2f1d;
+			    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+			}
 		</style>
-    </head>
-    <body>
-        <div class="container">
+    </head><body>
+     <div class="container">
+
 			<section class="main demo-1">
 				
-			  <div id="uc-container" class="uc-container">
+				<div id="uc-container" class="uc-container">
 					<div class="uc-initial-content">
 						<!-- custom content -->
 						<span class="clickme"></span>
-						<img src="images/Abdullah_23.jpg" alt=""/>
+						<img src="images/Abdullah_1 .jpg" alt="cover"/> 
 						
 					</div>
 					<div class="uc-final-content">
 						<!-- custom content -->
-						<img src="images/Abdullah_45.jpg" alt=""/>
-						<a href="abdul3.html" target="_self"><div class="arrow">						
+						<img src="../Folding Comics/images/Abdullah_6.jpg" alt=""/>
+						<a href="../Folding Comics/Abdul2.html" target="_self"><div class="arrow">						
 						</div></a>
-						<span class="close"></span>
+						<span class="close">x</span>
 				  </div>
-				  				</div>
-</section>''
-
-		</div>
+				</div>
+</section>
+	</div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.pfold.js"></script>
+		<script type="text/javascript" src="../Folding Comics/js/jquery.pfold.js"></script>
 		<script type="text/javascript">
 			$(function() {
 
 				var $container = $( '#uc-container' ),
 					pfold = $( '#uc-container' ).pfold({
+						speed : 300,
 						easing : 'ease-in-out',
-						folds : 1,
-						speed : 3000,
-						folddelay: 1000,
-						centered: true,
-						folddirection : ['bottom',]
+						folds : 3,
+						folddirection : ['left','bottom','right']
 					});
 				
 				window.onload=pfold.unfold();
@@ -74,13 +76,12 @@
 				} );
 				
 			});
+			
 			(function(){
    setTimeout(function(){
-     window.location="abdul3.html";
-   },8000); /* 1000 = 1 second*/
+     pfold.fold;
+   },200); /* 1000 = 1 second*/
 })();
-			
-			
 		</script>
     </body>
 </html>

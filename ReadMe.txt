@@ -1,10 +1,13 @@
-Created by Codrops
-License: http://tympanus.net/codrops/licensing/
+Note - Website must be served from parent Folding Comics folder, not innermost folder.
 
-Background Pattern(s) from http://subtlepatterns.com/
-http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+This is a site for Seq Art, a arts education project bringing non-traditional art forms into NYC public schools. 
 
-and from Pixeden: http://www.pixeden.com/
+This site is using Pfold, A  jQuery plugin that let's you unfold elements to reveal more content just like a piece of paper. Unfolding directions and number of steps can be specified.
+
+Licensed under the MIT License from Codrops.
+
+
+
 
 
 

@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>What IS a Foldy Comic?</title>
+		<meta http-equiv="refresh" content="4;stage.html" />
         <meta name="description" content="PFold: Paper-Like Unfolding Effect" />
         <meta name="keywords" content="css3, experiment, 3d, unfolding, fold, paper, component, element, web design, jquery, plugin, perspective" />
-        <meta name="author" content="Codrops" />
+        <meta name="author" content="Seq ARt" />
         <link rel="shortcut icon" href="../favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/pfold.css" />
@@ -54,36 +55,6 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.pfold.js"></script>
 		<script type="text/javascript">
-			$(function() {
-
-				var $container = $( '#uc-container' ),
-					pfold = $( '#uc-container' ).pfold({
-						
-						easing : 'ease-in-out',
-						folddelay : 100,
-						folds : 3,
-						folddirection : ['left','bottom','right']
-					});
-
-					window.onload=pfold.unfold();
-
-				$container.find( 'span.clickme' ).on( 'click', function() {
-
-					pfold.unfold();
-
-				} ).end().find( 'span.close' ).on( 'click', function() {
-
-					pfold.fold();
-					
-
-				} );
-
-			});
-			(function(){
-   setTimeout(function(){
-     window.location="final.html";
-   },9000); /* 1000 = 1 second*/
-})();
 		</script>
     </body>
 </html>

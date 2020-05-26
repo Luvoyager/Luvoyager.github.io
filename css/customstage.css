@@ -1,8 +1,8 @@
 
 /* Demo 1 */
 .demo-1 .uc-container{
-	width: 100px;
-	height: 145px;
+	width: 150px;
+	height: 150px;
 	margin: 60px auto;
 } 
 
@@ -11,28 +11,19 @@
 .demo-1 .uc-initial-content,
 .demo-1 .uc-back,
 .demo-1 .uc-front {
-	background: #fff url(../images/paper.jpg) repeat center center;
+	background: #D281CB url(../images/paper.jpg) repeat center center;
 }
+
 
 .demo-1 span.clickme {
     display: block;
     float: left;
     color: transparent;
-    width: 100px;
-    height: 145px;
-    margin: 30px 0 0 0px;
+    width: 150px;
+    height: 150px;
+    margin: 0px 0 0 0px;
     cursor: pointer;
-    background: transparent url(../images/clickme.png) no-repeat center center;
-	-webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    background: transparent url(../images/whatis.gif) no-repeat center center;
 }
 
 .demo-1 .scrollwrap {
@@ -41,7 +32,7 @@
     padding: 30px;
     overflow: hidden;
     position: absolute;
-    color: #224092;
+    color: black;
     font-family: "Satisfy", cursive;
     text-shadow: 0 1px 0 rgba(255,255,255,0.8);
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.7);
@@ -73,12 +64,12 @@
     top: 10px;
     right: 10px;
     font-family: "Satisfy", cursive;
-    color: #224092;
+    color: black;
     cursor: pointer;
     font-size: 20px;
     width: 20px;
     height: 20px;
-    border: 2px solid #224092;
+    border: 2px solid black;
     border-radius: 50%;
     text-align: center;
     line-height: 14px;

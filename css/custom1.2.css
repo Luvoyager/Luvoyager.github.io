@@ -2,9 +2,9 @@
 /* Demo 1 */
 .demo-1 .uc-container{
 	Position:relative;
-	width: 200px;
-	height: 143px;
-	margin: 60px auto	
+	width: 300px;
+	height: 214px;
+	margin-top: 10px;	
 }
 
 .demo-1 .uc-single, 
@@ -33,32 +33,38 @@
 
 
 .demo-1 .scrollwrap {
-    Position: absolute;
-	color: transparent;
-    color: rgba(255,255,255,0);
-	left: -179px;
-	top: -8px;
-	width: 469px;
-	height: 418px;
-	margin-bottom: -100px;
-	cursor: pointer;
-	text-align: center;
-    background: rgba(41,166,170,0);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	z-index: 2;
+    position: absolute;
+    cursor: pointer;
 }
 
-.demo-1 .uc-final-content:hover .scrollwrap  {
-    color: rgba(255,255,255,0.8);
-    background: rgba(255,255,200,0.7);
+
+.arrow {
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	z-index: 1;
+	margin-bottom: 0px;
+	cursor: pointer;
+	text-align: center;
+
+}
+
+.arrow img {
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	bottom: 0px;
+}
+
+
+.arrow img:hover{
+    color: rgba(255,106,255,0.33);
+    background: rgba(255,106,255,0.33);
+	outline: #333 solid 4px;
 }
 
 .demo-1 .close {
@@ -66,13 +72,10 @@
     top: 10px;
     right: 10px;
     font-family: "Satisfy", cursive;
-    color: #224092;
     cursor: pointer;
     font-size: 20px;
     width: 20px;
     height: 20px;
-    border: 2px solid #224092;
-    border-radius: 50%;
     text-align: center;
     line-height: 14px;
 }

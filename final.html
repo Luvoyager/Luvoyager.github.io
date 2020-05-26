@@ -9,7 +9,6 @@
         <meta name="keywords" content="comic art Teaching Artist Louise Diedrich Seq Art Franklin Furnace PS 217" />
         <meta name="author" content="Seq Art" />
         <link rel="shortcut icon" href="../favicon.ico"> 
-		<link rel="stylesheet" href="https://use.typekit.net/luw5ddm.css">
         <link rel="stylesheet" type="text/css" href="../Folding Comics/css/demo.css" />
         <link rel="stylesheet" type="text/css" href="../Folding Comics/css/pfold.css" />
         <link rel="stylesheet" type="text/css" href="../Folding Comics/css/custom1.css" />
@@ -22,64 +21,28 @@
 			    color: #fff;
 			    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 			}
+
+			.container > header h2,
+			p.info  {
+			    color: #4e2f1d;
+			    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+			}
 		</style>
     </head><body>
      <div class="container">
 
 			<section class="main demo-1">
 				
-				<div id="uc-container" class="uc-container">
-					<div class="uc-initial-content">
-						<!-- custom content -->
-						<span class="clickme"></span>
-						<img src="images/Abdullah_1 .jpg" alt="cover"/> 
+				
+						<img src="images/clickon.gif" width="100%" height="100%" alt="arrow"/> 
 						
-					</div>
-					<div class="uc-final-content">
-						<!-- custom content -->
-						<img src="../Folding Comics/images/Abdullah_23.jpg" alt=""/>
-						<a href="abdul2.html" target="_self"><div class="arrow">						
-						</div></a>
-						<span class="close"></span>
-				  </div>
-				</div>
+					
 </section>
 	</div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="../Folding Comics/js/jquery.pfold.js"></script>
 		<script type="text/javascript">
-			$(function() {
-
-				var $container = $( '#uc-container' ),
-					pfold = $( '#uc-container' ).pfold({
-						easing : 'ease-in-out',
-						speed : 2000,
-						folddelay: 1000,
-						folds : 1,
-						centered: true,
-						folddirection : ['right',]
-					});
-
-					window.onload=pfold.unfold();
-
-					$container.find( 'span.clickme' ).on( 'click', function() {
-
-					pfold.unfold();
-
-				} ).end().find( 'span.close' ).on( 'click', function() {
-
-					pfold.fold();
-					
-
-				} );
-
-			});
 			
-			(function(){
-   setTimeout(function(){
-     window.location="abdul2.html";
-   },3000); /* 1000 = 1 second*/
-})();
 		</script>
     </body>
 </html>
